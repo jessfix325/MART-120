@@ -1,2 +1,2 @@
 # MART-120
-Assignments 
+Homework 1
