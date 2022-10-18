@@ -1,0 +1,26 @@
+
+.fontstyle{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: lightskyblue;
+    background-color: rgb(147, 104, 188);
+}
+
+
+.fontstyle2
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 42px;
+    color:rgb(37, 13, 53);
+}
+
+#blueMe {
+    color: blue;
+    font-family: verdana;
+    font-size: 24px;
+  }
+#redMe {
+    color: rgb(140, 36, 36);
+    font-family: verdana;
+    font-size: 24px;
+  }
