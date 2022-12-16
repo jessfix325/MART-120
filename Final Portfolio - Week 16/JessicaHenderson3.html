@@ -1,0 +1,74 @@
+<html>
+    <title>Contact Information</title>
+    <head>
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script> 
+
+    function agreementMessage()
+    {
+        window.alert("Please select Yes to Submit!")
+
+
+    }
+    function required()
+    {
+            var firstName = document.getElementById("fName").value;
+            if(firstName == "")
+            {
+                document.getElementById("fName").focus();
+                document.getElementById("fName").style.backgroundColor = "yellow";
+        
+                
+                return false;
+            }
+
+            var lastName = document.getElementById("lName").value;
+            if(lastName == "")
+            {
+                document.getElementById("lName").focus();
+                document.getElementById("lName").style.backgroundColor = "yellow";
+            
+                
+                return false;
+            }
+
+            var emailVar = document.getElementById("email").value;
+            if(emailVar == "")
+            {
+                document.getElementById("email").focus();
+                document.getElementById("email").style.backgroundColor = "yellow";
+        
+                
+                return false;
+            }
+    }
+    </script>
+
+    </head>
+    <body style="background-color:rgb(214, 127, 214);">
+    
+        <h1>Set up a date -</h1>
+        <p></p>
+        If your curiousity is piqued, please fill out your information below & hit submit!
+        <form action="">
+            <p>First Name: <input type="text" id="fName" required></p>
+            <p>Last Name: <input type="text" id="lName" required></p>
+            <p>Address: <input type = "text" id="address"></p>
+            <p>Email: <input type = "text" id="email" required></p>
+            <p>Phone Number: <input type = "text" id="pNumber"></p>
+
+     <h3>May I contact you? </h3>
+         <input id = "Yes" type="radio" name="Yes" value="text" required>Yes<br>
+         <input id = "No" type="radio" name="No" value="text" onclick="agreementMessage();">No<br>
+
+    <button id="btnSubmit" onclick="required();">Submit Your Info</button>
+        </form>
+
+        <p><a id="blueMe" href="JessicaHenderson.html">Introduction</a></p>
+        <p><a id="redMe"href="JessicaHenderson2.html">Writing Sample</a></p>
+        <p style="font-size:20; color: rgb(64, 179, 179);"><a href="Final.html">Final Portfolio</a></p>
+        
+    </body>
+</html>
